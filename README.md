@@ -25,8 +25,20 @@ Workarounds for this include:
 4. Ensure that you have a third party camera app
 5. Ensure that you understand how to install / sideload apps (This list disables Google Play Services) or use a third party repo for apps (FDroid / Aurora Droid) for installing free and open source apps
 
-###### *How to use*
-To use this list, you must have adb debugging enabled for your device. To do this, see below.
+## *Enable ADB Debugging, setup environment for debloating*
+To run the debloating commands, you need to have the android command line tools. Here are the download links:
+* [Windows] (https://dl.google.com/android/repository/commandlinetools-win-6858069_latest.zip)
+* [MacOS] (https://dl.google.com/android/repository/commandlinetools-mac-6858069_latest.zip)
+* [Linux] (https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip)
+
+Once you have downloaded / installed the tools, grab your phone for the next steps:
+1. Open settings
+2. Click 'About Phone'
+3. Scroll to 'Build Number'
+4. Tap 'Build Number' repeatedly until you see the message 'You are now a developer!'
+
+## *How to use*
+To use this list, you must have adb debugging enabled for your device. To do this, read from the above.
 1. Enter device shell by executing 'adb shell'
 2. Pick the list you want, and copy and paste them into the shell. The shell will begin executing them, but will stop on the last command. Just press enter to run the last one. If the package was disabled, you will see "success" after each command runs, otherwise you will see an error (usually just that you dont have the package installed to begin with.
 3. Once done running the commands desiered from the list, close the shell window.
